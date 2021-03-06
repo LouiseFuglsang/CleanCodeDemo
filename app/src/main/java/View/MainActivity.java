@@ -1,4 +1,4 @@
-package com.example.cleancodedemo;
+package View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.cleancodedemo.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,8 +38,5 @@ public class MainActivity extends AppCompatActivity {
                 result.setText(input);
             }
         });
-
     }
 }
-
-
