@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.example.cleancodedemo.R;
 
-public class MainActivity extends AppCompatActivity {
+public class AndroidView extends AppCompatActivity {
 
     EditText editInput;
     TextView result;
