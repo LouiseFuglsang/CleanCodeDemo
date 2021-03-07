@@ -1,8 +1,5 @@
 package Model;
 
-import android.widget.TextView;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Observable;
 
 public class Model extends Observable {
