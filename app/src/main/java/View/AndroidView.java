@@ -1,17 +1,17 @@
 package View;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.cleancodedemo.R;
+import java.util.Observer;
+import java.util.Observable;
 
-public class AndroidView extends AppCompatActivity {
+public class AndroidView extends AppCompatActivity implements Observer {
 
     EditText editInput;
     TextView result;
@@ -30,13 +30,13 @@ public class AndroidView extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if (editInput.getText().toString() != null)
-                {
-                    Toast.makeText(getApplicationContext(), editInput.getText().toString(), Toast.LENGTH_LONG).show();
-                }
-                String input = editInput.getText().toString();
-                result.setText(input);
-            }
+           String input = editInput.getText().toString();
+               }
         });
     }
-}
+    //@Override
+    public void update(Observable o, Object updatedInput) {
+        String input = editInput.getText().toString();
+        result.setText( updatedInput );
+    }
+    }
